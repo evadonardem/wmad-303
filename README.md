@@ -1,1 +1,4 @@
-# wmad-303
+# WMAD-303 React Native Mobile Development
+
+## Facilitator
+Dave Medrano
