@@ -2,3 +2,5 @@
 
 ## Facilitator
 Dave Medrano
+
+### Members
