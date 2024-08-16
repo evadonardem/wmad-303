@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Jofre Seth Kiniway
+Palay-en, Brein
