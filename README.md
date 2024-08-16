@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Linson Ganado
+Jofre Seth Kiniway
