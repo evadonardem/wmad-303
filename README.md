@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Antonio, Jeverlyn
+Bitayan, Remser(Chad)
