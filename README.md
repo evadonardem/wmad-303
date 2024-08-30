@@ -4,4 +4,8 @@
 Dave Medrano
 
 ### Members
+- AMBAS, Jehaiah
+- BITAYAN, Remser
+- BONIFACIO, Andres
 - ERIO, Windson
+- PACALSO, Ruby Ann
