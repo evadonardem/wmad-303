@@ -4,6 +4,7 @@
 MEDRANO, Dave
 
 ### Members
+- BALANG, Leandro
 - AMBAS, Jehaiah
 - ANASAN, Genaro
 - BACASEN, John Rendell
