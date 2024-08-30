@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-- BONIFACIO, Andres
+- Job Pongdad
