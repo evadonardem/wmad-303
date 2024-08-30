@@ -3,5 +3,5 @@
 ## Facilitator
 Dave Medrano
 
-### Members
-Jeverlyn Antonio
+### Memberss
+- ANTONIO, Jeverlyn
