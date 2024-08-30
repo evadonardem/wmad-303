@@ -22,3 +22,4 @@ MEDRANO, Dave
 - NACNAS, Kevin
 - PACALSO, Ruby Ann
 - PALITOGEN, Ezekiel
+- AMANDO, Cyrene
