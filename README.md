@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Amiao, Jerick
+- AMIAO, Jerick
