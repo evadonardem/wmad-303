@@ -12,6 +12,7 @@ MEDRANO, Dave
 - EDWAS, Jaylon
 - ERIO, Windson
 - GANADO, Linson
+- HENRY, Gilbert
 - IBAYAN, Nikki
 - NACNAS, Kevin
 - PACALSO, Ruby Ann
