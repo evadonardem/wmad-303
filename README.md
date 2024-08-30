@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-- Job Pongdad
+- PONGDAD, Job
