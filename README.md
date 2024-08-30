@@ -4,4 +4,10 @@
 Dave Medrano
 
 ### Members
--BACASEN, JohnRendell
+- AMBAS, Jehaiah
+- BACASEN, John Rendell
+- BITAYAN, Remser
+- BONIFACIO, Andres
+- ERIO, Windson
+- GANADO, Linson
+- PACALSO, Ruby Ann
