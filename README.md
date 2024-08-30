@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Bitayan, Remser(Chad)
+BITAYAN, Remser
