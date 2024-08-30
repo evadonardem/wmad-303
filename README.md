@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Kraven Visaya
+VISAYA, Kraven
