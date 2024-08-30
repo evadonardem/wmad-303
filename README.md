@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Bacasen John Rendell 
+BACASEN, JohnRendell
