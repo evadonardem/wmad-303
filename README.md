@@ -4,4 +4,9 @@
 Dave Medrano
 
 ### Members
-GANADO, Linson
+- AMBAS, Jehaiah
+- BITAYAN, Remser
+- BONIFACIO, Andres
+- ERIO, Windson
+- GANADO, Linson
+- PACALSO, Ruby Ann
