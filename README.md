@@ -4,5 +4,4 @@
 Dave Medrano
 
 ### Members
-- AMBAS, Jehaiah
-- BONIFACIO, Andres
+-BADOL, Sarah Mae
