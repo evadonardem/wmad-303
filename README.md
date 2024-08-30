@@ -4,4 +4,8 @@
 Dave Medrano
 
 ### Members
-\- BALANG, Leandro
+- BALANG, Leandro
+- AMBAS, Jehaiah
+- BITAYAN, Remser
+- BONIFACIO, Andres
+- PACALSO, Ruby Ann
