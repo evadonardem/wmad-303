@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-SHog-oy, Iverson
+Shog-oy, Iverson
