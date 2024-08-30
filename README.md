@@ -4,7 +4,8 @@
 Dave Medrano
 
 ### Members
+
+- AMBAS, Jehaiah
+- BONIFACIO, Andres
 - NACNAS, Kevin
-
-
 
