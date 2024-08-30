@@ -4,4 +4,8 @@
 Dave Medrano
 
 ### Members
-\- CADLEY, Mel
+- CADLEY, Mel
+- AMBAS, Jehaiah
+- BITAYAN, Remser
+- BONIFACIO, Andres
+- PACALSO, Ruby Ann
