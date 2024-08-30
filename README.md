@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Bonifacio, Andres
+- BONIFACIO, Andres
