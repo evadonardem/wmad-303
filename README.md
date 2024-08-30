@@ -12,3 +12,4 @@ Dave Medrano
 - GANADO, Linson
 - NACNAS, Kevin
 - PACALSO, Ruby Ann
+- PALITOGEN, Ezekiel
