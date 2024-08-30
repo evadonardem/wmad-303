@@ -25,4 +25,5 @@ MEDRANO, Dave
 - PACALSO, Ruby Ann
 - PALAY-EN, Brein
 - PALITOGEN, Ezekiel
+- SHOG-OY, Iverson
 - VISAYA, Kraven
