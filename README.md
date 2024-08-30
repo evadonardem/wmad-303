@@ -5,6 +5,7 @@ MEDRANO, Dave
 
 ### Members
 - AMBAS, Jehaiah
+- ANASAN, Genaro
 - BACASEN, John Rendell
 - BITAYAN, Remser
 - BONIFACIO, Andres
