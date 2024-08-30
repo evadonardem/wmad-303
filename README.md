@@ -5,4 +5,5 @@ Dave Medrano
 
 ### Members
 - AMBAS, Jehaiah
+- BITAYAN, Remser
 - BONIFACIO, Andres
