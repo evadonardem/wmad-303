@@ -8,4 +8,5 @@ Dave Medrano
 - BITAYAN, Remser
 - BONIFACIO, Andres
 - ERIO, Windson
+- GANADO, Linson
 - PACALSO, Ruby Ann
