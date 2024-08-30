@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
--EDWAS, Jaylon
+- EDWAS, Jaylon
