@@ -25,3 +25,4 @@ MEDRANO, Dave
 - PACALSO, Ruby Ann
 - PALAY-EN, Brein
 - PALITOGEN, Ezekiel
+- VISAYA, Kraven
