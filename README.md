@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-ganado_Linson
+GANADO, Linson
