@@ -4,3 +4,4 @@
 Dave Medrano
 
 ### Members
+- CUYAM-AN, John Derick
