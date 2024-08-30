@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Balang, Leandro G.
+\- BALANG, Leandro
