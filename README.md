@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-AMBAS, Jehaiah
+- AMBAS, Jehaiah
