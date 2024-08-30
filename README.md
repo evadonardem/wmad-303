@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
--BITAYAN, Remser
+- BITAYAN, Remser
