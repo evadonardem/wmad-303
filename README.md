@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-palitogen_ezekiel
+- PALITOGEN, Ezekiel
