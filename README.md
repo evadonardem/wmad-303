@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-- CHARLIE_Toribio
+- AMIAO_Jeric
