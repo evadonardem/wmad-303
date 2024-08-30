@@ -11,6 +11,7 @@ MEDRANO, Dave
 - BITAYAN, Remser
 - BONIFACIO, Andres
 - CADLEY, Mel
+- CUYAM-AN, John Derick
 - EDWAS, Jaylon
 - ERIO, Windson
 - GANADO, Linson
