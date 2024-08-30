@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Pacalso, Ruby Ann
+EDWAS, Jaylon
