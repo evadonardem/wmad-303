@@ -4,11 +4,12 @@
 MEDRANO, Dave
 
 ### Members
-- BALANG, Leandro
 - AMBAS, Jehaiah
 - ANASAN, Genaro
+- ANTONIO, Jeverlyn
 - BACASEN, John Rendell
 - BADOL, Sarah Mae
+- BALANG, Leandro
 - BITAYAN, Remser
 - BONIFACIO, Andres
 - CADLEY, Mel
