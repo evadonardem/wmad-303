@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Melbert P. Marafo
+MARAFO, Melbert
