@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Ibayan_Nikki
+- IBAYAN, Nikki
