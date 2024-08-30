@@ -4,4 +4,4 @@
 Dave Medrano
 
 ### Members
-Windson Erio
+- ERIO, Windson
