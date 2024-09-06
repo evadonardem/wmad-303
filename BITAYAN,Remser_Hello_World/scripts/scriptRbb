@@ -1,0 +1,5 @@
+       const name = prompt ("What is your name");
+        document.getElementById("nameRbb").innerHTML = name;
+
+        const color = prompt("What is your favorite color");
+        document.getElementById("nameRbb").style.color = color;
