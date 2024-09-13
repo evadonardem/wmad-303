@@ -13,7 +13,6 @@ MEDRANO, Dave
 - BADOL, Sarah Mae
 - BALANG, Leandro
 - BITAYAN, Remser
-- BONIFACIO, Andres
 - CADLEY, Mel
 - CUYAM-AN, John Derick
 - EDWAS, Jaylon
@@ -27,5 +26,6 @@ MEDRANO, Dave
 - PACALSO, Ruby Ann
 - PALAY-EN, Brein
 - PALITOGEN, Ezekiel
+- PONGDAD, Job
 - SHOG-OY, Iverson
 - VISAYA, Kraven
