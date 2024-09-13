@@ -7,6 +7,7 @@ MEDRANO, Dave
 - ACEBES, Jayren
 - AMANDO, Cyrene
 - AMBAS, Jehaiah
+- AMIAO_Jeric
 - ANASAN, Genaro
 - ANTONIO, Jeverlyn
 - BACASEN, John Rendell
