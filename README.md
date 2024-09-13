@@ -5,6 +5,7 @@ MEDRANO, Dave
 
 ### Members
 - ACEBES, Jayren
+- AMANDO, Cyrene
 - AMBAS, Jehaiah
 - ANASAN, Genaro
 - ANTONIO, Jeverlyn
