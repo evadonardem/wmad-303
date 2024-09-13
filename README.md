@@ -4,10 +4,14 @@
 MEDRANO, Dave
 
 ### Members
+- ACEBES, Jayren
+- AMANDO, Cyrene
 - AMBAS, Jehaiah
 - ANASAN, Genaro
+- ANTONIO, Jeverlyn
 - BACASEN, John Rendell
 - BADOL, Sarah Mae
+- BALANG, Leandro
 - BITAYAN, Remser
 - BONIFACIO, Andres
 - CADLEY, Mel
@@ -21,5 +25,7 @@ MEDRANO, Dave
 - MARAFO, Melbert
 - NACNAS, Kevin
 - PACALSO, Ruby Ann
+- PALAY-EN, Brein
 - PALITOGEN, Ezekiel
-- AMANDO, Cyrene
+- SHOG-OY, Iverson
+- VISAYA, Kraven
