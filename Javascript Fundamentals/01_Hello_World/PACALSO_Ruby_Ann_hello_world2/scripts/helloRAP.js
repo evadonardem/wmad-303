@@ -1,8 +1,8 @@
-const nameNbi = prompt("What is oyour name?");
-        document.getElementById("nameNbi").innerHTML = nameNbi;
+const nameRAP = prompt("What is your name?");
+        document.getElementById("nameRAP").innerHTML = nameRAP;
 
 const kulay = prompt("What is your favorite color?");
-document.getElementById("nameNbi").style.color = kulay;
+document.getElementById("nameRAP").style.color = kulay;
 
 setInterval (()=> {
     let n = (Math.random() * 0xffff * 1000000).toString(16);
