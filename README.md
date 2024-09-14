@@ -30,4 +30,5 @@ MEDRANO, Dave
 - PALITOGEN, Ezekiel
 - PONGDAD, Job
 - SHOG-OY, Iverson
+- TORIBIO, Charlie
 - VISAYA, Kraven
