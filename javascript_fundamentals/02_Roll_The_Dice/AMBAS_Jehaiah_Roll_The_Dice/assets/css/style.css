@@ -1,4 +1,5 @@
 .dice{
+    display: inline-block;
     background-image:url(../images/die.jpg) ;
     background-color: red;
     width: 115px;

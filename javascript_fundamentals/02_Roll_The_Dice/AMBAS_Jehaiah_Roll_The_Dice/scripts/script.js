@@ -2,18 +2,23 @@ const rollbtn = document.getElementById("roll-btn");
 
 const roll = () => {
     const dimension = 116; 
-    const die1 = Math.floor(Math.random() * 6) + 1; 
-    const die1Element = document.getElementById("IahJhe");
+    const diceElements = [
+        document.getElementById("die1"),
+        document.getElementById("die2")
+    ];
 
-    console.log(die1); 
+    
+    diceElements.forEach((dieElement, index) => {
+        const dieValue = Math.floor(Math.random() * 6) + 1; 
+        console.log(`Die ${index + 1}:`, dieValue); 
 
-
-    if (die1Element) {
-        die1Element.style.backgroundPositionX = -(dimension * (die1 - 1)) + "px"; 
-        die1Element.style.backgroundPositionY = die1 > 3 ? -dimension + "px" : "0px";
-    } else {
-        console.log("Element with ID 'IahJhe' not found.");
-    }
+        if (dieElement) {
+            dieElement.style.backgroundPositionX = -(dimension * (dieValue - 1)) + "px"; 
+            dieElement.style.backgroundPositionY = dieValue > 3 ? -dimension + "px" : "0px";
+        } else {
+            console.log(`Die ${index + 1} element not found.`);
+        }
+    });
 };
 
 rollbtn.onclick = () => {
