@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <style>
+        .dice {
+            width: 116px;
+            height: 116px;
+            background-color: aqua;
+            background-image: url(images/die.jpg);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Scatter - Roller Dice</a>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5 ">
+        <div class="row justify-content-center">
+            <!-- <div class="col"></div> -->
+            <div class="col-lg-4 col-sm-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Roll it baby</h3>
+                    </div>
+                    <div class="card-body row justify-content-center ">
+                        <div class="col">
+                            <div class="dice card-img-top m-auto" id="dice1"></div>
+                            <h5 id="value1">1</h5>
+                        </div>
+                        <div class="col">
+                            <div class="dice card-img-top m-auto" id="dice2"></div>
+                            <h5  id="value2">1</h5>
+                        </div>
+                    </div>
+                    <div class="card-body justify-content-center ">
+                        <p>Sum</p><h3 id="sum"></h3>
+                    </div>
+                    <div class="card-footer">
+                        <a id="rollItBaby" class="btn btn-primary">Roll The Dice</a>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="col"></div> -->
+        </div>
+    </div>
+
+    <script src="scripts/dice.js"></script>
+</body>
+
+</html>
