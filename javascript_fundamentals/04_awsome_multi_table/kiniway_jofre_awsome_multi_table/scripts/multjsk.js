@@ -21,6 +21,9 @@ awesomeMultTableForm.onsubmit = function(event) {
             alertDiv.style.borderRadius = '5px';
             alertDiv.style.color = 'white';
             alertDiv.style.backgroundColor = (product % 2 === 0) ? 'green' : 'red';
+            alertDiv.style.display = 'flex';          // Use flexbox for centering
+            alertDiv.style.alignItems = 'center';     // Center vertically
+            alertDiv.style.justifyContent = 'center'; // Center horizontally
             
             newCell.appendChild(alertDiv);
             newRow.appendChild(newCell);
