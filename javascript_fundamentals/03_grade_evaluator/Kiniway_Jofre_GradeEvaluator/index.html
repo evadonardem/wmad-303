@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kiniway, Jofre Grade Evaluator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container p-5">
+        <h1 class="text-center mb-4">Grade Evaluator</h1>
+        <div class="mb-3">
+            <label for="yourGradejsk" class="form-label fw-bolder">Your Grade:</label>
+            <input type="number" class="form-control" id="yourGradejsk" placeholder="Enter Your Grade" min="0" max="100">
+        </div>
+
+        <div id="gradejsk" class="card mb-3" style="display: none;">
+            <div class="card-header" id="cardHeader">Header</div>
+            <div class="card-body">
+                <h5 class="card-title" id="cardTitle"></h5>
+                <p class="card-text" id="cardText"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/grade_evaluator_jsk.js"></script>
+</body>
+
+</html>
