@@ -26,4 +26,4 @@ document.getElementById('submitBtn').addEventListener('click', function() {
       }
       tableBody.appendChild(tr);
     }
-});
+  });
