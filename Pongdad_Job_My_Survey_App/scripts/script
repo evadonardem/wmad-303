@@ -1,0 +1,49 @@
+let tally = [
+    { socmed: 'facebook', count: 0, color: 'rgba(59, 89, 152, 0.2)', borderColor: 'rgba(59, 89, 152, 1)' }, 
+    { socmed: 'twitter', count: 0, color: 'rgba(29, 161, 242, 0.2)', borderColor: 'rgba(29, 161, 242, 1)' }, 
+    { socmed: 'instagram', count: 0, color: 'rgba(225, 48, 108, 0.2)', borderColor: 'rgba(225, 48, 108, 1)' }, 
+    { socmed: 'linkedin', count: 0, color: 'rgba(0, 119, 181, 0.2)', borderColor: 'rgba(0, 119, 181, 1)' }, 
+    { socmed: 'reddit', count: 0, color: 'rgba(255, 87, 0, 0.2)', borderColor: 'rgba(255, 87, 0, 1)' }, 
+];
+
+const socmedOptions = document.querySelectorAll('.socmed-option');
+
+socmedOptions.forEach(option => {
+    option.onclick = (event) => {
+        const socmedSelected = event.target.getAttribute('data-socmed');
+        const selectedSocmed = tally.find(socmed => socmed.socmed === socmedSelected);
+        if (selectedSocmed) {
+            selectedSocmed.count++;
+        }
+        console.log(tally);
+        updateChart();  
+    };
+});
+
+const ctx = document.getElementById('surveyChart').getContext('2d');
+const chart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+        labels: tally.map(row => row.socmed.charAt(0).toUpperCase() + row.socmed.slice(1)), 
+        datasets: [{
+            label: 'Social Media Preferences',
+            data: tally.map(row => row.count), 
+            backgroundColor: tally.map(row => row.color),
+            borderColor: tally.map(row => row.borderColor),
+            borderWidth: 1
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+
+function updateChart() {
+    chart.data.datasets[0].data = tally.map(row => row.count);
+    chart.update();
+};
+
