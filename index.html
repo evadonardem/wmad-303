@@ -1,0 +1,60 @@
+<!DOCTYPE html> 
+ <html lang="en"> 
+ <head> 
+     <meta charset="UTF-8"> 
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+     <title>BASILIO, Clint Kycer My Survey App</title> 
+     
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script> 
+  
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script> 
+  
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet"></link> 
+  
+     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script> 
+ </head> 
+ <div class="container"> 
+     <div class="text-center mt-4"> 
+         <h1 class="display-1"> 
+             <i class="fa-solid fa-dna"></i> 
+             What social media do you prefer to use? 
+         </h1> 
+     </div> 
+  
+     <div class="btn-group form-control" role="group" aria-label="Basic mixed styles example"> 
+         <button type="button" class="socmed-option btn btn-primary" data-socmed="facebook"> 
+             <i class="fa-brands fa-lg fa-meta"></i> Facebook/Meta 
+         </button> 
+         <button type="button" class="socmed-option btn btn-danger" data-socmed="youtube"> 
+             <i class="fa-brands fa-lg fa-square-youtube"></i> YouTube 
+         </button> 
+         <button type="button" class="socmed-option btn btn-warning" data-socmed="instagram"> 
+             <i class="fa-brands fa-instagram"></i> Instagram 
+         </button> 
+         <button type="button" class="socmed-option btn btn-success" data-socmed="twitter"> 
+             <i class="fa-brands fa-x-twitter"></i> Twitter 
+         </button> 
+     </div> 
+  
+     <hr class="my-5"/> 
+  
+     <button id="generateResult" type="button" class="btn btn-info form-control">Generate Survey Result</button> 
+  
+     <div class="row mt-4"> 
+         <div class="col-md-6"> 
+             <canvas id="surveyBarResult"></canvas> 
+         </div> 
+         <div class="col-md-6"> 
+             <canvas id="surveyPieResult"></canvas> 
+         </div> 
+     </div> 
+ </div> 
+  
+  
+  
+  
+     <script src="scripts/surveyJRB.js"></script> 
+ </body> 
+ </html>
