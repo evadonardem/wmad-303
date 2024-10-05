@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMBAS, My Survey App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+</head>
+
+<body>
+    <div class="container text-center mt-4">
+        <i class="fa-solid fa-computer fa-2xl" style="color: #000000;"></i>
+        <h1 class="display1 text-center"> WHAT OPERATING SYSTEM DO YOU LOVE TO USE?</h1>
+
+        <div class="btn-group form-control mt-2" role="group" aria-label="Basic mixed styles example">
+            <button type="button" class="operate option btn btn-warning" data-operate="Windows">
+                <i class="fa-brands fa-windows fa-2xl" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="operate option btn btn-danger" data-operate="Apple">
+                <i class="fa-brands fa-apple fa-2xl" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="operate option btn btn-primary" data-operate="Ubuntu">
+                <i class="fa-brands fa-ubuntu fa-2xl" style="color: #000000;"></i>
+            </button>
+            <button type="button" class="operate option btn btn-success" data-operate="Redhat">
+                <i class="fa-brands fa-redhat fa-2xl" style="color: #000000;"></i>
+            </button>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark fw-bold p-2 mt-4" id="generateButton">Generate</button>
+        </div>
+        <div class="row"><canvas id="acquisitions"></canvas></div>
+    </div>
+    <script src="scripts/survey_JA.js"></script>
+</body>
+
+</html>
