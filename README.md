@@ -14,6 +14,7 @@ MEDRANO, Dave
 - BADOL, Sarah Mae
 - BALANG, Leandro
 - BITAYAN, Remser
+- BASILIO, Clint Kycer
 - CADLEY, Mel
 - CUYAM-AN, John Derick
 - EDWAS, Jaylon
@@ -32,3 +33,4 @@ MEDRANO, Dave
 - SHOG-OY, Iverson
 - TORIBIO, Charlie
 - VISAYA, Kraven
+
