@@ -4,7 +4,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 type Props = {
   label: string;
   theme?: 'primary';
-  onPresswe?: () => void;
+  onPresswe?: () => void; 
 };
 
 export default function Button({ label, theme, onPresswe }: Props) {
@@ -13,11 +13,11 @@ export default function Button({ label, theme, onPresswe }: Props) {
       <View
         style={[
           styles.buttonContainer,
-          { borderWidth: 4, borderColor: '#ffd33d', borderRadius: 18 },
+          { borderWidth: 4, borderColor: '#5A7F6D', borderRadius: 18 },
         ]}>
         <Pressable
           style={[styles.button, { backgroundColor: '#fff' }]}
-          onPress={(onPresswe) => alert('You pressed a button.')}>
+          onPress={onPresswe}> {/* Use onPresswe here */}
           <FontAwesome name="picture-o" size={18} color="#25292e" style={styles.buttonIcon} />
           <Text style={[styles.buttonLabel, { color: '#25292e' }]}>{label}</Text>
         </Pressable>
@@ -25,9 +25,10 @@ export default function Button({ label, theme, onPresswe }: Props) {
     );
   }
 
+  // Default case without 'primary' theme
   return (
     <View style={styles.buttonContainer}>
-      <Pressable style={styles.button}  onPress={onPresswe} >
+      <Pressable style={styles.button} onPress={onPresswe}> {/* Use onPresswe here */}
         <Text style={styles.buttonLabel}>{label}</Text>
       </Pressable>
     </View>
@@ -55,7 +56,7 @@ const styles = StyleSheet.create({
     paddingRight: 8,
   },
   buttonLabel: {
-    color: '#fff',
+    color: '#333',
     fontSize: 16,
   },
 });
