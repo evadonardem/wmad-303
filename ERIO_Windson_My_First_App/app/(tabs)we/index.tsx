@@ -1,5 +1,4 @@
 import { View, StyleSheet } from 'react-native';
- import { Image } from 'expo-image'; 
  import { useState } from 'react';
  import { type ImageSource } from 'expo-image';
 import * as ImagePicker from 'expo-image-picker';
@@ -11,14 +10,10 @@ import EmojiPicker from '@/componentswe/EmojiPickerwe';
 import EmojiList from '@/componentswe/EmojiListwe';
 import { GestureHandlerRootView } from "react-native-gesture-handler";
 import EmojiSticker from '@/componentswe/EmojiStickerwe';
-import { GestureHandlerRootView } from "react-native-gesture-handler";
-
 const PlaceholderImage = require('@/assets/images/R.jpg');
-
 
 export default function Index() {
   const [selectedImage, setSelectedImage] = useState<string | undefined>(undefined);
-  const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [pickedEmoji, setPickedEmoji] = useState<ImageSource | undefined>(undefined);
 
@@ -38,7 +33,6 @@ export default function Index() {
     }
   };
 
-  
   const onReset = () => {
     setShowAppOptions(false);
   };
