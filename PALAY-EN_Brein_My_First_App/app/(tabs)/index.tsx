@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import { View, StyleSheet, ScrollView, Alert } from 'react-native';
+import { View, StyleSheet, ScrollView, Alert, Text } from 'react-native';
 import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import * as ImagePicker from 'expo-image-picker';
@@ -51,12 +51,12 @@ export default function Index() {
     }
   };
 
-  // Save the image to the library
+  // Save the screenshot to the library
   const onSaveImageAsync = async () => {
     try {
       if (imageRef.current) {
         const localUri = await captureRef(imageRef, {
-          height: 440,
+          format: 'png',
           quality: 1,
         });
         await MediaLibrary.saveToLibraryAsync(localUri);
@@ -65,7 +65,8 @@ export default function Index() {
         Alert.alert('Error', 'Image reference is missing.');
       }
     } catch (error) {
-      console.error('Error saving image:', error);
+      Alert.alert('Error', 'Failed to save the image.');
+      console.error(error);
     }
   };
 
@@ -115,7 +116,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#f8f9fa',
   },
   contentContainer: {
-    paddingBottom: 0,
+    // paddingBottom: 50,
   },
   backgroundGradient: {
     flex: 1,
