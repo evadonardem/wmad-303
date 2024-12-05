@@ -1,27 +1,64 @@
-import React from "react";
-import { Text, View } from "react-native";
+import React, { useState } from 'react';
+import { View, Text, TextInput, Button, StyleSheet } from 'react-native';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 
-export default function ImageTreeInfo() {
+const AboutBPA: React.FC = () => {
+  const [name, setName] = useState("");
+  const [greeting, setGreeting] = useState("");
+
+  const generateGreeting = () => {
+    if (name) {
+      setGreeting(`Nice to meet you, ${name}!`);
+    } else {
+      setGreeting("Please enter your name.");
+    }
+  };
+
   return (
-    <View style={{ flex: 1, padding: 16, justifyContent: 'center' }}>
-      <Text style={{ fontSize: 20, fontWeight: 'bold', textAlign: 'center' }}>
-        About the Image Tree
-      </Text>
-      <Text style={{ textAlign: 'center' }}>
-        The image tree is a beautiful and unique feature of this app. It's a
-        representation of the image hierarchy, showing the relationships
-        between different images. Each image is represented by a node in the
-        tree, and the connections between nodes indicate the parent-child
-        relationships.
-      </Text>
-      <Text style={{ marginTop: 16, textAlign: 'center' }}>
-        To navigate through the tree, you can use the buttons at the top of the
-        screen. The "Back" button takes you back to the previous node in the
-        tree, while the "Forward" button takes you to the next node.
-      </Text>
-      <Text style={{ marginTop: 16, textAlign: 'center' }}>
-        You can also use the "Home" button to return to the root node of the tree.
-      </Text>
+    <View style={styles.container}>
+      <MaterialCommunityIcons name="information" size={100} color="black" />
+      <Text style={styles.name}>Hi, I'm M</Text>
+      {greeting && <Text style={styles.greeting}>{greeting}</Text>}
+      <Text style={styles.prompt}>Enter your name:</Text>
+      <TextInput
+        style={styles.input}
+        placeholder="Your name"
+        onChangeText={setName}
+        value={name}
+      />
+      <Button title="Generate Greeting" onPress={generateGreeting} />
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: 20,
+  },
+  name: {
+    fontSize: 24,
+    marginVertical: 10,
+  },
+  greeting: {
+    fontSize: 18,
+    marginVertical: 10,
+  },
+  prompt: {
+    fontSize: 16,
+    marginVertical: 10,
+  },
+  input: {
+    height: 40,
+    borderColor: 'gray',
+    borderWidth: 1,
+    borderRadius: 5,
+    paddingHorizontal: 10,
+    width: '80%',
+    marginBottom: 10,
+  },
+});
+
+export default AboutBPA;

@@ -1,59 +1,145 @@
-import React from 'react';
-import { Text, View, StyleSheet } from 'react-native';
-import ImageViewer from "@/components/ImageViewer";
-import Button from '@/components/Button';
-import { ScrollView, StatusBar } from 'react-native';
-import { SafeAreaView, SafeAreaProvider } from 'react-native-safe-area-context';
+import React, { useRef, useState } from 'react';
+import { View, StyleSheet, ScrollView, Alert } from 'react-native';
+import ImageViewer from '@/componentsBPA/ImageViewerBPA';
+import Button from '@/componentsBPA/ButtonBPA';
+import IconButton from '@/componentsBPA/IconBottonBPA';
+import CircleButton from '@/componentsBPA/CircleBottonBPA';
+import EmojiPicker from '@/componentsBPA/EmojiPickerBPA';
+import EmojiList from '@/componentsBPA/EmojiListBPA';
+import EmojiSticker from '@/componentsBPA/EmojiStickerBPA';
+import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import * as ImagePicker from 'expo-image-picker';
+import * as MediaLibrary from 'expo-media-library';
+import { captureRef } from 'react-native-view-shot';
 
-const PlaceholderImageBPA = require('@/assets/images/tree.png');
+const PlaceholderImage = require('@/assets/images/msi-red-logo.jpg');
 
 export default function Index() {
+  const imageRef = useRef<View>(null);
+  const [selectedImageBPA, setSelectedImageBPA] = useState<string | undefined>(undefined);
+  const [showAppOptions, setShowAppOptions] = useState<boolean>(false);
+  const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
+  const [pickedEmoji, setPickedEmoji] = useState<string | undefined>(undefined);
+  const [status, requestPermission] = MediaLibrary.usePermissions();
+
+  // Request media library permissions if not already granted
+  if (!status) {
+    requestPermission();
+  }
+
+  // Select an image from the library
+  const pickImageAsyncBPA = async () => {
+    const result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.Images,
+      allowsEditing: true,
+      quality: 1,
+    });
+
+    if (!result.canceled) {
+      setSelectedImageBPA(result.assets[0].uri);
+      setShowAppOptions(true);
+    } else {
+      Alert.alert('No Image Selected', 'You did not select any image.');
+    }
+  };
+
+  // Save the image to the library
+  const onSaveImageAsync = async () => {
+    try {
+      const localUri = await captureRef(imageRef, {
+        height: 440,
+        quality: 1,
+      });
+      await MediaLibrary.saveToLibraryAsync(localUri);
+      Alert.alert('Success', 'Image saved to your library!');
+    } catch (error) {
+      Alert.alert('Error', 'Failed to save the image.');
+      console.error(error);
+    }
+  };
+
   return (
-    <SafeAreaProvider >
-      <SafeAreaView style={styles.container} edges={['top']}>
-        <ScrollView>
-          <View style={styles.container}>
-            <br />
-            <View style={styles.imageContainer}>
-              <ImageViewer imgSource={PlaceholderImageBPA} />
+    <SafeAreaProvider>
+      <SafeAreaView style={styles.container}>
+        <ScrollView contentContainerStyle={styles.contentContainer}>
+          <GestureHandlerRootView style={styles.container}>
+            <View style={styles.imageContainer} ref={imageRef} collapsable={false}>
+              <ImageViewer imgSource={PlaceholderImage} selectedImageBPA={selectedImageBPA} />
+              {pickedEmoji && <EmojiSticker imageSize={40} stickerSource={{ uri: pickedEmoji }} />}
             </View>
-            <br />
-            <View style={styles.footerContainer}>
-              <Button theme="primary" label="Choose a image" />
-              <Button label="Use this photo" />
-            </View>
-          </View>
+
+            {showAppOptions ? (
+              <View style={styles.optionsContainer}>
+                <View style={styles.optionsRow}>
+                  <IconButton icon="refresh" label="Reset" onPress={() => setShowAppOptions(false)} />
+                  <CircleButton onPress={() => setIsModalVisible(true)} />
+                  <IconButton icon="save-alt" label="Save" onPress={onSaveImageAsync} />
+                </View>
+              </View>
+            ) : (
+              <View style={styles.footerContainer}>
+                <Button theme="primary" label="Choose a photo" onPressBPA={pickImageAsyncBPA} />
+                <Button label="Use this photo" onPressBPA={() => setShowAppOptions(true)} />
+              </View>
+            )}
+
+            <EmojiPicker isVisible={isModalVisible} onClose={() => setIsModalVisible(false)}>
+              <EmojiList onSelect={(image) => setPickedEmoji(image.uri)} onCloseModal={() => setIsModalVisible(false)} />
+            </EmojiPicker>
+          </GestureHandlerRootView>
         </ScrollView>
       </SafeAreaView>
     </SafeAreaProvider>
   );
 }
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#C9DAEA',
+    backgroundColor: 'linear-gradient(135deg, #6A0572, #28A745)',
     alignItems: 'center',
-    justifyContent: 'center',
   },
-  text: {
-    color: '#191516',
-  },
-  button: {
-    fontSize: 20,
-    textDecorationLine: 'underline',
-    color: '#191516',
+  contentContainer: {
+    paddingBottom: 50,
   },
   imageContainer: {
-    flex: 1,
+    marginVertical: 20,
+    alignItems: 'center',
+    borderRadius: 16,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowRadius: 4,
+    elevation: 5,
+    padding: 10,
   },
-  image: {
-    width: 320,
-    height: 440,
-    borderRadius: 18,
+  optionsContainer: {
+    position: 'absolute',
+    bottom: 30,
+    width: '100%',
+    alignItems: 'center',
+  },
+  optionsRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
+    width: '100%',
   },
   footerContainer: {
-    flex: 1 / 3,
     alignItems: 'center',
+    marginTop: 20,
+  },
+  button: {
+    padding: 12,
+    borderRadius: 8,
+    backgroundColor: 'linear-gradient(135deg, #6A0572, #28A745)',
+    alignItems: 'center',
+    justifyContent: 'center',
+    shadowColor: '#000',
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 5,
+  },
+  buttonText: {
+    color: '#FFFFFF',
+    fontWeight: 'bold',
   },
 });
