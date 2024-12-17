@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MARAFO, Melbert My Survey App</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CHART JS -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-primary ">
+        <div class="container-fluid text-center">
+            <a class="navbar-brand text-white" href="#">
+                <i class="fa-solid fa-chart-simple h1 mx-3"></i>
+                <span class="h2">Data Master</span>
+            </a>
+        </div>
+    </nav>
+
+    <div class="container w-full text-center p-5">
+        <h1 class="h1 fw-bold text-primary">What Car Do You Use?</h1>
+
+        <div class="btn-group my-4" role="group" aria-label="Basic example">
+            <button type="button" onclick="increment(0)" class="btn btn-primary px-4 py-3">
+                <i class="fa-solid fa-truck-pickup fa-xl p-3"></i>
+                <br>
+                Pickup
+            </button>
+            <button type="button" onclick="increment(1)" class="btn btn-primary px-4 py-3">
+                <i class="fa-solid fa-truck-medical fa-xl p-3"></i>
+                <br>
+                Ambulance
+            </button>
+            <button type="button" onclick="increment(2)" class="btn btn-primary px-4 py-3">
+                <i class="fa-solid fa-tractor fa-xl p-3"></i>
+                <br>
+                Tractor
+            </button>
+            <button type="button" onclick="increment(3)" class="btn btn-primary px-4 py-3">
+                <i class="fa-solid fa-plane fa-xl p-3"></i>
+                <br>
+                Airplane
+            </button>
+            <button type="button" onclick="increment(4)" class="btn btn-primary px-4 py-3">
+                <i class="fa-solid fa-cart-shopping fa-xl p-3"></i>
+                <br>
+                Cart
+            </button>
+        </div>
+    </div>
+
+    <div class="container w-full d-flex justify-content-center" style="height: 60vh; width: 100vw;">
+        <canvas id="mc"></canvas>
+    </div>
+
+    <script src="./scripts/surveyMPM.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
