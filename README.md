@@ -14,6 +14,7 @@ MEDRANO, Dave
 - BADOL, Sarah Mae
 - BALANG, Leandro
 - BITAYAN, Remser
+- Bugalin, Frederick 
 - CADLEY, Mel
 - CUYAM-AN, John Derick
 - EDWAS, Jaylon
